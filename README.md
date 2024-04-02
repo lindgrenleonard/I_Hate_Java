@@ -27,7 +27,7 @@ Docker is the development environment used for this project. If you have the Doc
 ```
 git@github.com:lindgrenleonard/I_Hate_Java.git
 ```
-Edit the `server_files/server.properties file` with your preffered settings
+Edit the `server_files/server.properties file` with your preferred settings
 
 The docker container relizes on mounting the `server_files` folder from the host system for persistant storage. Hence it is key to run the container with the proper folder structure. 
 
