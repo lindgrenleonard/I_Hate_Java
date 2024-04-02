@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  server:
+    container_name: minecraft-server-container
+    restart: unless-stopped
+    ports:
+      - target: 25565 
+        published: 25565
+    build: .
+    volumes:
+      - ./server_files:/usr/server-profile
+    stdin_open: true
+    tty: true
