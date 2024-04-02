@@ -25,7 +25,7 @@ Docker is the development environment used for this project. If you have the Doc
 
 1. Clone the repository:
 ```
-git@github.com:lindgrenleonard/i_hate_java.git
+git@github.com:lindgrenleonard/I_Hate_Java.git
 ```
 Edit the `server_files/server.properties file` with your preffered settings
 
