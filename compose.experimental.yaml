@@ -1,0 +1,70 @@
+version: "3.8"
+
+services:
+  lobby_server:
+    container_name: lobby-server-container
+    build:
+      context: .
+      dockerfile: Dockerfile.lobby
+    restart: unless-stopped
+    ports:
+      - "25566:25565"
+    volumes:
+      - ./Lobby:/usr/server-profile
+    stdin_open: true
+    tty: true
+    networks:
+      my_network:
+        ipv4_address: 172.18.0.6
+
+  survival_server:
+    container_name: survival-server-container
+    build:
+      context: .
+      dockerfile: Dockerfile.survival
+    restart: unless-stopped
+    ports:
+      - "25567:25565"
+    volumes:
+      - ./Survival:/usr/server-profile
+    stdin_open: true
+    tty: true
+    networks:
+      my_network:
+        ipv4_address: 172.18.0.7
+
+  modded_server:
+    container_name: modded-server-container
+    build:
+      context: .
+      dockerfile: Dockerfile.modded
+    restart: unless-stopped
+    ports:
+      - "25568:25565"
+    volumes:
+      - ./Modded:/usr/server-profile
+    stdin_open: true
+    tty: true
+    networks:
+      my_network:
+        ipv4_address: 172.18.0.8
+
+  velocity_proxy:
+    container_name: velocity-proxy-container
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile.velocity
+    volumes:
+      - ./Velocity:/usr/server-profile
+    ports:
+      - "25565:25577"
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.0.0/16

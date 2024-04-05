@@ -1,0 +1,12 @@
+# World files
+Modded/world/**
+Modded/logs/**
+Modded/crash-reports/**
+
+Lobby/world*/**
+Lobby/logs/**
+
+Survival/world*/**
+Surival/logs/**
+
+Velocity/logs/**

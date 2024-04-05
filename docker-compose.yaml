@@ -1,0 +1,73 @@
+version: "3.8"
+
+services:
+  lobby_server:
+    container_name: lobby-server-container
+    restart: unless-stopped
+    ports:
+      - target: 25565
+        published: 25566
+    build: ./lobby_server_files
+    volumes:
+      - ./lobby_server_files:/usr/server-profile
+    stdin_open: true
+    tty: true
+    networks:
+      server_subnet:
+        ipv4_address: 172.20.0.3
+    depends_on:
+      - velocity_proxy
+
+  survival_server:
+    container_name: survival-server-container
+    restart: unless-stopped
+    ports:
+      - target: 25565
+        published: 25567
+    build: ./survival_server_files
+    volumes:
+      - ./survival_server_files:/usr/server-profile
+    stdin_open: true
+    tty: true
+    networks:
+      server_subnet:
+        ipv4_address: 172.20.0.4
+    depends_on:
+      - velocity_proxy
+
+  modded_server:
+    container_name: modded-server-container
+    restart: unless-stopped
+    ports:
+      - target: 25565
+        published: 25568
+    build: ./modded_server_files
+    volumes:
+      - ./modded_server_files:/usr/server-profile
+    stdin_open: true
+    tty: true
+    networks:
+      server_subnet:
+        ipv4_address: 172.20.0.5
+    depends_on:
+      - velocity_proxy
+
+  velocity_proxy:
+    container_name: velocity-proxy-container
+    restart: unless-stopped
+    build: ./velocity_files
+    volumes:
+      - ./velocity_files:/usr/server-profile
+    ports:
+      - target: 25577
+        published: 25565
+    networks:
+      - server_subnet
+      - default
+
+networks:
+  server_subnet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: "172.20.0.0/24"

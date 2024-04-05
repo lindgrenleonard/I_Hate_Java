@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  velocity_proxy:
+    container_name: velocity-proxy-container
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile.velocity
+    volumes:
+      - ./Velocity:/usr/server-profile
+    ports:
+      - "25565:25577"
+    networks:
+      - host

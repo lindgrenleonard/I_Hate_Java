@@ -1,0 +1,54 @@
+[14:38:03] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[14:38:08] [ServerMain/INFO]: Loaded 1174 recipes
+[14:38:08] [ServerMain/INFO]: Loaded 1271 advancements
+[14:38:08] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[14:38:08] [Server thread/WARN]: ****************************
+[14:38:08] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
+[14:38:08] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
+[14:38:08] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
+[14:38:08] [Server thread/WARN]: ****************************
+[14:38:08] [Server thread/INFO]: Loading properties
+[14:38:08] [Server thread/INFO]: This server is running Paper version git-Paper-464 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: e709245)
+[14:38:09] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:38:09] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:38:09] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[14:38:09] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 6 worker threads, and gen parallelism of 6 threads
+[14:38:09] [Server thread/INFO]: Default game type: SURVIVAL
+[14:38:09] [Server thread/INFO]: Generating keypair
+[14:38:09] [Server thread/INFO]: Starting Minecraft server on *:25567
+[14:38:09] [Server thread/INFO]: Using epoll channel type
+[14:38:09] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[14:38:09] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[14:38:09] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:38:09] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[14:38:09] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[14:38:09] [Server thread/WARN]: Whilst this makes it possible to use Velocity, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[14:38:09] [Server thread/WARN]: Please see https://docs.papermc.io/velocity/security for further information.
+[14:38:09] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[14:38:09] [Server thread/INFO]: Preparing level "world"
+[14:38:10] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[14:38:10] [Server thread/INFO]: Time elapsed: 207 ms
+[14:38:10] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[14:38:12] [Server thread/INFO]: Time elapsed: 1850 ms
+[14:38:12] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[14:38:12] [Server thread/INFO]: Time elapsed: 69 ms
+[14:38:12] [Server thread/INFO]: Running delayed init tasks
+[14:38:12] [Server thread/INFO]: Done (4.379s)! For help, type "help"
+[14:38:12] [Server thread/INFO]: Timings Reset
+[14:43:13] [User Authenticator #0/INFO]: UUID of player Unitox is f232bb45-7f42-4c59-b72a-a0e1a5717ad0
+[14:43:13] [Server thread/INFO]: Unitox joined the game
+[14:43:13] [Server thread/INFO]: Unitox[/172.18.0.1:53058] logged in with entity id 238 at ([world]-5.300000011920929, 78.0, -0.30000001192092896)
+[14:43:19] [Server thread/INFO]: Unitox lost connection: Disconnected
+[14:43:19] [Server thread/INFO]: Unitox left the game
+[14:43:42] [User Authenticator #0/INFO]: UUID of player Unitox is f232bb45-7f42-4c59-b72a-a0e1a5717ad0
+[14:43:42] [Server thread/INFO]: Unitox joined the game
+[14:43:42] [Server thread/INFO]: Unitox[/172.18.0.1:49106] logged in with entity id 282 at ([world]-5.12884708831179, 79.0, -0.5618312845729835)
+[14:43:52] [Server thread/INFO]: Unitox lost connection: Disconnected
+[14:43:52] [Server thread/INFO]: Unitox left the game
+[14:44:01] [User Authenticator #0/INFO]: UUID of player Unitox is f232bb45-7f42-4c59-b72a-a0e1a5717ad0
+[14:44:01] [Server thread/INFO]: Unitox joined the game
+[14:44:01] [Server thread/INFO]: Unitox[/172.18.0.1:40522] logged in with entity id 301 at ([world]-7.281350133745959, 78.0, -1.1835958639333688)
+[14:44:05] [Server thread/INFO]: Unitox lost connection: Disconnected
+[14:44:05] [Server thread/INFO]: Unitox left the game
